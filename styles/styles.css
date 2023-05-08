@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  color: white;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #121314;
+  height: calc(100vh- 80px);
+  /*background-image: url(../assets/imagenes/biologiabakcgropund.jpg);*/
+  background-image: url(../assets/imagenes/adn.jpg);
+  background-size: cover;
+}
+img {
+  height: 400px;
+  width: auto;
+}
+.videoYimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+h1 {
+  margin-top: 40px;
+}
+.texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  background-color: #121314;
+  padding: 15px;
+  border-radius: 15px;
+  gap: 10px;
+  margin-top: 20px;
+}
+.final {
+  margin: 40px;
+}
+footer {
+  background-color: #121314;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.loading-title {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  img {
+    height: 200px;
+    max-width: 300px;
+  }
+  video {
+    height: 250px;
+    max-width: 350px;
+  }
+}
