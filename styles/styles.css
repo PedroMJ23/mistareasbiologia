@@ -5,6 +5,7 @@
   list-style: none;
   list-style-type: none;
   color: white;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -12,7 +13,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: #121314;
-  height: calc(100vh- 80px);
+  height: calc(100vh- 80px);  
   /*background-image: url(../assets/imagenes/biologiabakcgropund.jpg);*/
   background-image: url(../assets/imagenes/adn.jpg);
   background-size: cover;
@@ -62,6 +63,65 @@ footer {
   animation: fade-in 2s ease-in-out forwards;
 }
 
+.jsBtn{
+  margin: 10px auto;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.js_p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hidden{
+  display: none;
+}
+.tarea1{
+  background-color: #121314;
+  margin: auto;
+  
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+table {
+  background-color: #121314;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+.ul_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 50px;
+}
+li{
+  padding: 10px;
+}
+.li_img{
+  width: 150px;
+  height: 130px;
+}
+.gif{
+  padding: 15px;
+  width: auto;
+  max-height: 350px;
+}
+
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -70,6 +130,7 @@ footer {
     opacity: 1;
   }
 }
+
 
 @media only screen and (max-width: 720px) {
   img {
